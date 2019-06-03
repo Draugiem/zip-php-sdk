@@ -77,6 +77,7 @@ class ZipApi {
 		curl_setopt( $ch, CURLOPT_HTTPHEADER, ['Authorization: Basic '. base64_encode( $this->apiKey )] );
 		curl_setopt( $ch, CURLOPT_CUSTOMREQUEST, $method );
 		curl_setopt( $ch, CURLOPT_CONNECTTIMEOUT, 30 );
+        curl_setopt( $ch, CURLOPT_FOLLOWLOCATION, 1 );
 		curl_setopt( $ch, CURLOPT_POSTFIELDS, json_encode( $data ) );
 		return curl_exec( $ch );
 	}

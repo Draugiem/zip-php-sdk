@@ -5,18 +5,18 @@
  */
 class ZipApi {
 	/**
-	 * @var string zip.draugiem.lv API key
+	 * @var string zip.lv API key
 	 */
 	private $apiKey;
 
 	/**
-	 * zip.draugiem.lv API URL
+	 * zip.lv API URL
 	 */
-	const API_URL = 'https://zip.draugiem.lv/api/v1/import';
+	const API_URL = 'https://zip.lv/api/v1/import';
 
 	/**
 	 * ZipApi constructor.
-	 * @param string $apiKey zip.draugiem.lv API key
+	 * @param string $apiKey zip.lv API key
 	 */
 	public function __construct( $apiKey ) {
 		$this->apiKey = (string)$apiKey;
